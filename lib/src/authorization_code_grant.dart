@@ -201,7 +201,8 @@ class AuthorizationCodeGrant {
       'client_id': identifier,
       'redirect_uri': redirect.toString(),
       'code_challenge': codeChallenge,
-      'code_challenge_method': 'S256'
+      'code_challenge_method': 'S256',
+      'nonce': 'MhpMkvpbbV9qSuTPj7OQ'
     };
 
     if (state != null) parameters['state'] = state;
